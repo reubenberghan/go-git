@@ -128,23 +128,23 @@ Branches in git are a way to manage making changes to the code while still ensur
 A pretty standard dev workflow could be:
 1. We want to add this thing
 1. We create a branch off of our master branch
-a. `git checkout master`
-b. `git branch my-cool-new-thing`
-c. `git checkout my-cool-new-thing` (hot tip, you can combine `git branch` and `git checkout` with `git checkout -b my-cool-new-thing`)
+   1. `git checkout master`
+   1. `git branch my-cool-new-thing`
+   1. `git checkout my-cool-new-thing` (hot tip, you can combine `git branch` and `git checkout` with `git checkout -b my-cool-new-thing`)
 1. We make the changes
-a. Edit / add files
-b. `git add -A`
-c. `git commit -m "add cool new thing"`
+   1. Edit / add files
+   1. `git add -A`
+   1. `git commit -m "add cool new thing"`
 1. We push the changes
-a. `git push -u origin my-cool-new-thing`
+   1. `git push -u origin my-cool-new-thing`
 1. We merge the changes
-a. Create a PR into the `master` branch in GitHub
-b. Review the code, make any necessary changes, and then merge the PR
+   1. Create a PR into the `master` branch in GitHub
+   1. Review the code, make any necessary changes, and then merge the PR
 1. Pull down the latest into `master`
-a. `git checkout master`
-b. `git pull` (because we used the `-u` flag when we created the branch on our first push git knows where we want to pull from here)
+   1. `git checkout master`
+   1. `git pull` (because we used the `-u` flag when we created the branch on our first push git knows where we want to pull from here)
 1. Rinse and repeat
-a. At some point you will likely want to clean up merged branches but let's get out head around these steps first
+   1. At some point you will likely want to clean up merged branches but let's get out head around these steps first
 
 So there is a bit going on in that workflow but basically the main commands for branches are:
 - List local branches: `git branch`
